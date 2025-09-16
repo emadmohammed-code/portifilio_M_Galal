@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact • Mostafa Galal</title>
+    <meta name="description" content="Contact Mostafa Galal El Bakri — Flutter Developer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="home.html">
+          <span class="brand-mark" aria-hidden="true">MG</span>
+          <span class="brand-text">Mostafa Galal</span>
+        </a>
+        <nav class="nav" aria-label="Main Navigation">
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="poproject.html" class="nav-link">Projects</a>
+          <a href="skills.html" class="nav-link">Skills</a>
+          <a href="contact.html" class="nav-link current">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme"></button>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <section class="card hero" data-reveal>
+        <div class="blob blob-a" aria-hidden="true"></div>
+        <div class="blob blob-b" aria-hidden="true"></div>
+        <h1 class="title">Contact</h1>
+        <p class="lead">I’m available for internships and entry‑level Flutter roles. Reach out in English or Arabic — I’ll respond quickly.</p>
+      </section>
+
+      <section class="grid two">
+        <!-- Form -->
+        <form id="contact-form" class="card form" novalidate data-reveal>
+          <div class="field">
+            <label class="label" for="name">Name</label>
+            <input id="name" name="name" class="input" placeholder="Your name" />
+            <span class="error" id="err-name" role="alert"></span>
+          </div>
+          <div class="field">
+            <label class="label" for="email">Email</label>
+            <input id="email" name="email" type="email" class="input" placeholder="name@example.com" />
+            <span class="error" id="err-email" role="alert"></span>
+          </div>
+          <div class="field">
+            <label class="label" for="message">Message</label>
+            <textarea id="message" name="message" class="textarea" placeholder="Tell me about your idea or role"></textarea>
+            <span class="error" id="err-message" role="alert"></span>
+          </div>
+          <button class="btn primary" id="submit-btn" type="submit">Send message</button>
+          <p class="muted small" id="form-status" aria-live="polite"></p>
+        </form>
+
+        <!-- Sidebar -->
+        <aside class="card side" data-reveal>
+          <h2>Reach me</h2>
+          <div class="reach">
+            <a class="reach-item" href="mailto:mostafagalal14152004@gmail.com">mostafagalal14152004@gmail.com</a>
+            <a class="reach-item" href="tel:+201033589095">01033589095</a>
+            <a class="reach-item" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mostafa-galal-17-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+          </div>
+          <div class="divider"></div>
+          <h3>FAQ</h3>
+          <ul class="list">
+            <li>• Availability: Part‑time or full‑time internship, remote‑friendly.</li>
+            <li>• Timezone: EET (Cairo). Flexible overlap with global teams.</li>
+            <li>• Focus: Flutter apps, AI features, clean architecture.</li>
+          </ul>
+          <div class="divider"></div>
+          <h3>Location</h3>
+          <p class="muted">Mansoura, Egypt — open to remote worldwide.</p>
+          <div class="map" aria-hidden="true"></div>
+        </aside>
+      </section>
+
+      <!-- Long sections for scroll -->
+      <section class="grid two long">
+        <article class="card" data-reveal>
+          <h3>Communication</h3>
+          <p class="muted">Clear requirements, quick feedback loops, and transparent progress updates are my priorities.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Process</h3>
+          <p class="muted">From discovery to delivery: architecture, milestones, QA, and release plans are documented.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Quality</h3>
+          <p class="muted">Testing (unit/widget/integration), accessibility checks, and performance budgets included.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Stack</h3>
+          <p class="muted">Flutter • Bloc/Cubit • Dio • Sqflite • Firebase • Clean Architecture • MVVM • Python (ML)</p>
+        </article>
+      </section>
+
+      <!-- CTA -->
+      <section class="card cta" data-reveal>
+        <div class="cta-grid">
+          <div>
+            <h2>Let’s build something amazing</h2>
+            <p class="muted">Share your idea and we’ll shape a plan with timelines and a scalable architecture.</p>
+            <div class="cta-actions">
+              <a class="btn primary" href="mailto:mostafagalal14152004@gmail.com">Email</a>
+              <a class="btn outline" href="home.html">Back to Home</a>
+            </div>
+          </div>
+          <div class="cta-art"><div class="blob blob-c"></div><div class="float"></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot">
+        <div>
+          <div class="foot-title">Mostafa Galal</div>
+          <p class="muted small">Flutter Developer • Mansoura, Egypt</p>
+          <div class="muted small links">
+            <a href="mailto:mostafagalal14152004@gmail.com">mostafagalal14152004@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+201033589095">01033589095</a>
+          </div>
+        </div>
+        <div>
+          <div class="foot-sub">Links</div>
+          <a class="muted" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mostafa-galal-17-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+        <div>
+          <div class="foot-sub">Availability</div>
+          <p class="muted small">Open to internships and junior Flutter roles. Passionate about AI-powered mobile apps and clean architecture.</p>
+        </div>
+      </div>
+      <div class="copy muted small">© <span id="year"></span> Mostafa Galal El Bakri. All rights reserved.</div>
+    </footer>
+
+    <script src="contact.js" defer></script>
+  </body>
+</html>

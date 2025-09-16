@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects • Mostafa Galal</title>
+    <meta name="description" content="Projects by Mostafa Galal El Bakri — Flutter Developer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="poproject.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="home.html">
+          <span class="brand-mark" aria-hidden="true">MG</span>
+          <span class="brand-text">Mostafa Galal</span>
+        </a>
+        <nav class="nav" aria-label="Main Navigation">
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="poproject.html" class="nav-link current">Projects</a>
+          <a href="home.html#skills" class="nav-link">Skills</a>
+          <a href="home.html#contact" class="nav-link">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme"></button>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <section class="card hero" data-reveal>
+        <div class="blob blob-a" aria-hidden="true"></div>
+        <div class="blob blob-b" aria-hidden="true"></div>
+        <h1 class="title">Projects</h1>
+        <p class="lead">Long case studies with architecture, decisions, and results. Explore my AI‑infused, clean‑architecture Flutter apps.</p>
+      </section>
+
+      <!-- Filters / tags (visual only) -->
+      <section class="card filters" data-reveal aria-label="Filters">
+        <button class="chip active" data-chip>All</button>
+        <button class="chip" data-chip>Flutter</button>
+        <button class="chip" data-chip>AI / ML</button>
+        <button class="chip" data-chip>State Mgmt</button>
+        <button class="chip" data-chip>APIs</button>
+        <button class="chip" data-chip>Local DB</button>
+      </section>
+
+      <!-- Project list -->
+      <section class="grid two project-list">
+        <!-- Weather AI -->
+        <article class="project card" data-reveal data-tags="Flutter,AI / ML,APIs">
+          <div class="project-head">
+            <h2 class="project-title">Weather App with AI Integration</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p1">Details</button>
+          </div>
+          <p class="muted">ML‑powered forecasts with a Random Forest model bridged between Python and Dart; responsive UI and offline cache.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Dio</span><span>Python</span><span>Random Forest</span><span>Clean Architecture</span>
+          </div>
+          <div id="p1" class="more">
+            <ul class="list">
+              <li>• Modular features with MVVM and repository pattern.</li>
+              <li>• Dio networking, retries, caching, and graceful errors.</li>
+              <li>• Animated charts, geolocation, and theming.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Meal Planner AI -->
+        <article class="project card" data-reveal data-tags="Flutter,AI / ML,State Mgmt,APIs">
+          <div class="project-head">
+            <h2 class="project-title">Meal Planner with AI Integration</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p2">Details</button>
+          </div>
+          <p class="muted">Personalized meal plans and chat‑based recommendations using Gemini; favorites, filters, and recipe exploration.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Gemini AI</span><span>Cubit</span><span>Dio</span><span>Feature Modules</span>
+          </div>
+          <div id="p2" class="more">
+            <ul class="list">
+              <li>• Lightweight Cubit state with clear events and states.</li>
+              <li>• Offline recipes and preferences via SharedPreferences.</li>
+              <li>• Modular screens and testable repositories.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Muslim App -->
+        <article class="project card" data-reveal data-tags="Flutter,Local DB,APIs,State Mgmt">
+          <div class="project-head">
+            <h2 class="project-title">Muslim App</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p3">Details</button>
+          </div>
+          <p class="muted">Quran with Arabic/English, accurate prayer times, daily Adhkar, and 200+ reciters with downloads.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Sqflite</span><span>Cubit</span><span>Dio</span>
+          </div>
+          <div id="p3" class="more">
+            <ul class="list">
+              <li>• Background audio and downloadable recitations.</li>
+              <li>• Local database for speed and offline usage.</li>
+              <li>• Accessible UI with large fonts and dark mode.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Movie App -->
+        <article class="project card" data-reveal data-tags="Flutter,APIs,State Mgmt">
+          <div class="project-head">
+            <h2 class="project-title">Movie App</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p4">Details</button>
+          </div>
+          <p class="muted">Browse movies with lists, search, and detailed views; fast networking and polished UI.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Bloc</span><span>Dio</span>
+          </div>
+          <div id="p4" class="more">
+            <ul class="list">
+              <li>• Predictable Bloc state with caching.</li>
+              <li>• Skeletons, shimmer, and micro‑interactions.</li>
+              <li>• Robust error boundaries and retries.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- To‑Do App -->
+        <article class="project card" data-reveal data-tags="Flutter,Local DB,APIs,State Mgmt">
+          <div class="project-head">
+            <h2 class="project-title">To‑Do App</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p5">Details</button>
+          </div>
+          <p class="muted">Login, task types/priorities, calendar scheduling, search, profile updates, and offline storage.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Firebase Auth</span><span>Sqflite</span>
+          </div>
+          <div id="p5" class="more">
+            <ul class="list">
+              <li>• Onboarding and custom navigation.</li>
+              <li>• Hybrid persistence with Firebase + cache.</li>
+              <li>• Form validation and accessible UI.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- E‑commerce -->
+        <article class="project card" data-reveal data-tags="Flutter,APIs,State Mgmt">
+          <div class="project-head">
+            <h2 class="project-title">E‑commerce App</h2>
+            <button class="toggle" aria-expanded="false" aria-controls="p6">Details</button>
+          </div>
+          <p class="muted">Onboarding, auth, product browsing, search, favorites, cart, and profile; responsive with ScreenUtil.</p>
+          <div class="tech">
+            <span>Flutter</span><span>Bloc</span><span>Dio</span><span>SharedPreferences</span>
+          </div>
+          <div id="p6" class="more">
+            <ul class="list">
+              <li>• Scalable modules and clean architecture.</li>
+              <li>• Optimistic UI and efficient lists.</li>
+              <li>• Secure user data storage and caching.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Extra long scroll content -->
+      <section class="grid two long">
+        <article class="card note" data-reveal>
+          <h3>Engineering Note</h3>
+          <p class="muted">Performance profiling, code‑splitting, and animation budgets keep apps smooth and battery‑friendly.</p>
+        </article>
+        <article class="card note" data-reveal>
+          <h3>Testing</h3>
+          <p class="muted">Unit, widget, and integration tests protect core flows and speed up confident iteration.</p>
+        </article>
+        <article class="card note" data-reveal>
+          <h3>Architecture</h3>
+          <p class="muted">MVVM, repositories, and clear boundaries maximize maintainability and scalability.</p>
+        </article>
+        <article class="card note" data-reveal>
+          <h3>AI</h3>
+          <p class="muted">From recommendations to forecasting, I integrate ML where it adds measurable value.</p>
+        </article>
+      </section>
+
+      <section class="card cta" data-reveal>
+        <div class="cta-grid">
+          <div>
+            <h2>Have a project in mind?</h2>
+            <p class="muted">Let’s discuss your idea and pick the right architecture, state management, and data layer.</p>
+            <div class="cta-actions">
+              <a class="btn primary" href="mailto:mostafagalal14152004@gmail.com">Contact</a>
+              <a class="btn outline" href="home.html">Back to Home</a>
+            </div>
+          </div>
+          <div class="cta-art"><div class="blob blob-c"></div><div class="float"></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot">
+        <div>
+          <div class="foot-title">Mostafa Galal</div>
+          <p class="muted small">Flutter Developer • Mansoura, Egypt</p>
+          <div class="muted small links">
+            <a href="mailto:mostafagalal14152004@gmail.com">mostafagalal14152004@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+201033589095">01033589095</a>
+          </div>
+        </div>
+        <div>
+          <div class="foot-sub">Links</div>
+          <a class="muted" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mostafa-galal-17-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+        <div>
+          <div class="foot-sub">Availability</div>
+          <p class="muted small">Open to internships and junior Flutter roles. Passionate about AI-powered mobile apps and clean architecture.</p>
+        </div>
+      </div>
+      <div class="copy muted small">© <span id="year"></span> Mostafa Galal El Bakri. All rights reserved.</div>
+    </footer>
+
+    <script src="poproject.js" defer></script>
+  </body>
+</html>
